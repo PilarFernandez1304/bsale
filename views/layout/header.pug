@@ -1,0 +1,12 @@
+header 
+    .navegacion
+        .container
+            .row.justify-content-center.justify-content-md-between.align-items-center.py-4 
+                .col-md-4.col-6
+                    a(href="/")
+                        img(src="/img/logo.svg", alt="sitio-logo")
+                .col-md-8.d-flex.justify-content-end.align-items-center
+                    form#formulario.d-flex
+                        input#search.form-control.me-1(type='search' placeholder='Search' aria-label='Search')
+                        button#btn-search.btn.btn-secondary.btn-outline-light(type='submit') Search
+    include navbar

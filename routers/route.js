@@ -3,23 +3,33 @@ import express from 'express';
 const router = express.Router()
 // req- lo que emviamos res - lo que express responde
 router.get('/',(req,res)=>{
-    res.send('Home')
+    res.render('home',{
+        pagina:'Inicio'
+    })
 })
 
 router.get('/lineaBlanca',(req,res)=>{
-    res.send('LineaBlanca')
+    res.render('lineaBlanca',{
+        pagina:'Linea Blanca'
+    })
 })
 
 router.get('/ropa',(req,res)=>{
-    res.send('Ropa')
+    res.render('ropa',{
+        pagina:'Ropa'
+    });
 })
 
 router.get('/juguetes',(req,res)=>{
-    res.send('Juguetes')
+    res.render('Juguetes',{
+        pagina:'Juguetes'
+    })
 })
 
 router.get('/computo',(req,res)=>{
-    res.send('Computo')
+    res.render('Computo',{
+        pagina:'Computo'
+    })
 })
 
 export default router
